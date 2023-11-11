@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "creatorpay"
+version = "0.1.0"
+description = "A platform for creatives of all stripes to fund themselves. Proudly LGBTQ-run and created!"
+authors = ["Pyrox <pyrox@pyrox.dev>"]
+license = "MPL-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+stripe = "^7.3.0"
+fastapi = {version = "0.99", extras = ["all"]}
+uvicorn = {version = "^0.24.0.post1", extras = ["standard"]}
+sqlmodel = "^0.0.11"
+python-ulid = "^2.2.0"
+isocodes = "^2023.9.15"
+httpx = "^0.25.1"
+pytest = "^7.4.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+ruff = "^0.1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
