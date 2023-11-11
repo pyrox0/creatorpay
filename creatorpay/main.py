@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from .routers import auth, users, account, payments, campaigns
+from .routers import auth_router, users_router, account_router, payments_router, campaigns_router
 
 app = FastAPI(
     title="CreatorPay API",
@@ -17,8 +17,8 @@ app = FastAPI(
     },
 )
 
-app.include_router(auth.router)
-app.include_router(account.router)
-app.include_router(campaigns.router)
-app.include_router(payments.router)
-app.include_router(users.router)
+app.include_router(auth_router)
+app.include_router(account_router)
+app.include_router(campaigns_router)
+app.include_router(payments_router)
+app.include_router(users_router)
