@@ -1,13 +1,11 @@
 .direnv
-commands/__pycache__
 __pycache__
-Lavalink.jar
-plugins/
 dist
 db/*.db
 result
 poetry.toml
 .ruff_cache
-modules/hot-reload.py
 .devenv
 .pre-commit-config.yaml
+.pytest_cache
+.venv
